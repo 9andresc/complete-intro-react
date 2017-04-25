@@ -20,22 +20,22 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "axios": "0.15.2",
-    "express": "4.14.0",
+    "axios": "0.16.1",
+    "express": "4.15.2",
     "history": "4.4.0",
-    "lodash": "4.16.2",
+    "lodash": "4.17.4",
     "preact": "6.4.0",
     "preact-compat": "3.9.3",
-    "react": "15.3.2",
-    "react-dom": "15.3.2",
-    "react-redux": "4.4.0",
-    "react-router": "4.0.0-alpha.5",
-    "redux": "3.3.1",
-    "redux-thunk": "2.1.0"
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-redux": "5.0.4",
+    "react-router": "4.1.1",
+    "redux": "3.6.0",
+    "redux-thunk": "2.2.0"
   },
   "devDependencies": {
     "babel-core": "6.16.0",
-    "babel-jest": "16.0.0",
+    "babel-jest": "19.0.0",
     "babel-loader": "6.2.7",
     "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
     "babel-polyfill": "6.16.0",
@@ -58,14 +58,14 @@
     "eslint-plugin-react": "6.3.0",
     "eslint-plugin-standard": "2.0.0",
     "husky": "0.13.3",
-    "jest": "15.1.1",
+    "jest": "19.0.2",
     "jsdom": "9.5.0",
     "json-loader": "0.5.4",
     "react-addons-test-utils": "15.3.2",
     "react-test-renderer": "15.3.2",
     "style-loader": "0.13.1",
-    "webpack": "2.1.0-beta.25",
-    "webpack-dev-server": "1.16.2"
+    "webpack": "2.4.1",
+    "webpack-dev-server": "2.4.4"
   },
   "directories": {
     "test": "test"
