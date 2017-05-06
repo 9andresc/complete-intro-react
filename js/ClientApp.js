@@ -1,7 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
-var MyTitle = React.createClass({
+const MyTitle = React.createClass({
   render: function () {
     return (
       React.DOM.div(null,
@@ -11,17 +11,19 @@ var MyTitle = React.createClass({
   }
 })
 
-var myFirstComponent = React.createClass({
+const MyTitleFactory = React.createFactory(MyTitle)
+
+const MyFirstComponent = React.createClass({
   render: function () {
     return (
       React.DOM.div(null, [
-        React.createElement(MyTitle),
-        React.createElement(MyTitle),
-        React.createElement(MyTitle),
-        React.createElement(MyTitle)
+        MyTitleFactory(null),
+        MyTitleFactory(null),
+        MyTitleFactory(null),
+        MyTitleFactory(null)
       ])
     )
   }
 })
 
-ReactDOM.render(React.createElement(myFirstComponent), document.getElementById('app'))
+ReactDOM.render(React.createElement(MyFirstComponent), document.getElementById('app'))
