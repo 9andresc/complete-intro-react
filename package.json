@@ -11,10 +11,9 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "commit": "git-cz",
+    "cmt": "git-cz",
     "dev": "webpack-dev-server",
     "lint": "eslint js/**/*.js server.js",
-
     "precommit": "yarn lint && yarn test",
     "test": "NODE_ENV=test jest",
     "update-test": "npm run test -- -u",
