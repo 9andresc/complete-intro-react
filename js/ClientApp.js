@@ -1,18 +1,7 @@
-/* global React ReactDOM */
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const MyTitle = React.createClass({
-  propTypes: {
-    color: React.PropTypes.string.isRequired,
-    title: React.PropTypes.string.isRequired
-  },
-  render: function () {
-    return (
-      React.DOM.div(null,
-        React.DOM.h1({ style: { color: this.props.color, fontWeight: 'bold' } }, this.props.title)
-      )
-    )
-  }
-})
+import MyTitle from './MyTitle'
 
 const MyTitleFactory = React.createFactory(MyTitle)
 
