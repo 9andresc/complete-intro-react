@@ -1,5 +1,4 @@
-const React = require('react')
-const ReactDOM = require('react-dom')
+/* global React ReactDOM */
 
 const MyTitle = React.createClass({
   propTypes: {
