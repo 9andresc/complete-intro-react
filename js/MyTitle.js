@@ -8,11 +8,15 @@ export default React.createClass({
     color: React.PropTypes.string.isRequired,
     title: React.PropTypes.string.isRequired
   },
-  render: function () {
+  render () {
+    const style = { color: this.props.color }
+
     return (
-      div(null,
-        h1({ style: { color: this.props.color, fontWeight: 'bold' } }, this.props.title)
-      )
+      <div>
+        <h1 style={style}>
+          {this.props.title}
+        </h1>
+      </div>
     )
   }
 })
