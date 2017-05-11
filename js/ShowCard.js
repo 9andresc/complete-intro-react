@@ -2,10 +2,10 @@ import React from 'react'
 
 class ShowCard extends React.Component {
   render () {
-    const { description, imdbID, poster, title, year } = this.props.show
+    const { description, poster, title, year } = this.props.show
 
     return (
-      <div className='show-card' key={imdbID}>
+      <div className='show-card'>
         <img src={`/public/img/posters/${poster}`} />
         <div>
           <h3>{title}</h3>
