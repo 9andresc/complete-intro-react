@@ -13,10 +13,10 @@
     "build": "webpack",
     "cmt": "git-cz",
     "dev": "webpack-dev-server",
-    "lint": "eslint js/**/*.js server.js",
+    "lint": "eslint js/**/*.js webpack.config.js",
     "precommit": "yarn lint && yarn test",
     "test": "NODE_ENV=test jest",
-    "update-test": "npm run test -- -u",
+    "update-test": "yarn test -- -u",
     "watch": "webpack --watch"
   },
   "dependencies": {
