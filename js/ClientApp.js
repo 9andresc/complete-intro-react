@@ -1,4 +1,4 @@
-import { HashRouter, Match } from 'react-router'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import React from 'react'
 import { render } from 'react-dom'
 
@@ -6,17 +6,19 @@ import '../public/normalize.css' // eslint-disable-line
 import '../public/style.css' // eslint-disable-line
 
 import Landing from './Landing'
+import Search from './Search'
 
-const App = React.createClass({
+class App extends React.Component {
   render () {
     return (
-      <HashRouter>
+      <Router>
         <div className='app'>
-          <Match exactly pattern='/' component={Landing} />
+          <Route exact path='/' component={Landing} />
+          <Route exact path='/search' component={Search} />
         </div>
-      </HashRouter>
+      </Router>
     )
   }
-})
+}
 
 render(<App />, document.getElementById('app'))
