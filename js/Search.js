@@ -7,9 +7,9 @@ class Search extends React.Component {
   render () {
     return (
       <div className='search'>
-        {preload.shows.map(show => (
+        {preload.shows.map(show =>
           <ShowCard key={show.imdbID} show={show} />
-        ))}
+        )}
       </div>
     )
   }
