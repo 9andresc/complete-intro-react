@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 class ShowCard extends React.Component {
@@ -18,7 +19,7 @@ class ShowCard extends React.Component {
 }
 
 ShowCard.propTypes = {
-  show: React.PropTypes.object.isRequired
+  show: PropTypes.object.isRequired
 }
 
 export default ShowCard
